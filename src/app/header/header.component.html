@@ -1,0 +1,16 @@
+<div class="header-container">
+    <div class="options">
+        <div class="space">
+            <img src="../../assets/dog-paw.jpeg" width="50" height="50">
+            <p>Welcome To Pampered Paws</p>
+        </div>
+        <div class="option-header">
+            @for (option of toolbarOptions; track option) {
+            <div  class="option-display" (click)="navigate(option)">
+                <p>{{option}}</p>
+            </div>
+            }
+        </div>
+    </div>
+    <hr>
+</div>

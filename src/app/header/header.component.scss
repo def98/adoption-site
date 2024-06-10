@@ -1,0 +1,30 @@
+.header-container {
+    height: 10%;
+    display: block;
+}
+
+.option-header {
+    padding: 0px 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.space {
+    height: 50%;
+    text-align: center;
+    font-size: x-large;
+    align-items: center;
+    display: list-item;
+}
+
+hr {
+    border-color: black;
+}
+
+img {
+    border-radius: 50%;
+}
+
+.option-display {
+    cursor: pointer;
+}

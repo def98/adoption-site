@@ -1,0 +1,22 @@
+<div class="adoption-cards">
+    @for(petProfile of petCards; track petProfile.id) {
+        <mat-card class="pet-card">
+            <mat-card-header>
+                <div mat-card-avatar class="profile-header-image"></div>
+                <mat-card-title>{{petProfile.name}}</mat-card-title>
+                <mat-card-subtitle>{{petProfile.age}}</mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-content>
+                @if(petProfile.imageUrl != null && petProfile.imageUrl.trim() != "") {
+                    <img class="display-pic" mat-card-image src="dogProfile.imageUrl">
+                }@else{
+                    <img class="display-pic" mat-card-image src="../../assets/dog-tongue.jpeg">
+                }
+                <p>{{petProfile.bio}}</p>
+            </mat-card-content>
+            <mat-card-footer class="id">
+                <p>ID: {{petProfile.id}}</p>
+            </mat-card-footer>
+        </mat-card>
+    }
+</div>
